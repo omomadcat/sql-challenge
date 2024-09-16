@@ -1,4 +1,19 @@
 # SQL-Challenge: Module 9
+
+## Instructions for Grading and Importing Data
+
+The following `COPY` commands are set up to work with the absolute path:
+  
+```sql
+-- Absolute path to import CSV files
+COPY departments(dept_no, dept_name)
+FROM 'C:\\Users\\madis\\Desktop\\sql-challenge\\data\\departments.csv'
+DELIMITER ','
+CSV HEADER;
+```
+*Note for Grader:*
+- If the project is cloned to a different directory, update the absolute path in the COPY commands to match the new location.
+
 ## Background
 It’s been two weeks since you were hired as a new data engineer at Pewlett Hackard (a fictional company). Your first major task is to do a research project about people whom the company employed during the 1980s and 1990s. All that remains of the employee database from that period are six CSV files.
 
