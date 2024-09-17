@@ -7,9 +7,11 @@ The following `COPY` commands are set up to work with the absolute path:
 ```sql
 -- Absolute path to import CSV files
 COPY departments(dept_no, dept_name)
-FROM 'C:\\Users\\madis\\Desktop\\sql-challenge\\data\\departments.csv'
+FROM 'C:\\Users\\madis\\Desktop\\sql-challenge\\EmployeeSQL\\data\\departments.csv'
 DELIMITER ','
 CSV HEADER;
+
+-- (Other COPY commands with absolute paths)
 ```
 *Note for Grader:*
 - If the project is cloned to a different directory, update the absolute path in the COPY commands to match the new location.
